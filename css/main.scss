@@ -1,0 +1,47 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//colors
+$blue: #61C4D9;
+$darkGreen: #365A49;
+$green: #497870;
+
+@import "./media.scss";
+
+//z-indexes
+$z-fixed-menu: 100;
+
+//normalize
+@import "./normalize.scss";
+
+// setap
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700&display=swap');
+@import "./base.scss";
+
+//components
+@import "./blocks/_hero.scss";
+@import "./blocks/_header.scss";
+@import "./blocks/_logo.scss";
+@import "./blocks/_menu.scss";
+@import "./blocks/_phone-number.scss";
+@import "./blocks/_hamburger.scss";
+@import "./blocks/_features.scss";
+@import "./blocks/_feature.scss";
+@import "./blocks/_btn.scss";
+@import "./blocks/_section.scss";
+@import "./blocks/_headline.scss";
+@import "./blocks/_benefits.scss";
+@import "./blocks/_benefit.scss";
+@import "./blocks/benefits-section";
+@import "./blocks/_reviews.scss";
+@import "./blocks/_interactive-avatar.scss";
+@import "./blocks/_reviews-section.scss";
+@import "./blocks/_form.scss";
+@import "./blocks/_order-section.scss";
+@import "./blocks/_radio.scss";
+@import "./blocks/_fixed-menu.scss";
+@import "./blocks/_map-section.scss";

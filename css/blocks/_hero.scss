@@ -1,0 +1,92 @@
+.hero {
+  background: url("./../img/decor/big-leaf.png") right bottom no-repeat;
+  background-color: $blue;
+  height: 100vh;
+  min-height: rem(650px);
+  color: #FFF;
+  position: relative;
+
+  @include tablets {
+    background-position: right bottom 82%;
+  }
+
+  &:before {
+    position: absolute;
+    bottom: rem(-40px);
+    left: 2%;
+    content: url("./../img/decor/corner-leaf.png");
+  } 
+
+  &:after {
+    position: absolute;
+    bottom: rem(-55px);
+    right: 0%;
+    content: url("./../img/decor/comp-hero.png");
+  }
+
+  &::before, &::after {
+    @include tablets{
+      display: none;
+    }
+  }
+}
+
+.hero__container {
+  background/* -image */: url("./../img/decor/chocolates.png") right center / 50% auto no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: rem(24px) 0 rem(46px);
+
+  @include tablets {
+    background: none;
+  }
+}
+
+.hero__title-section {
+  width: 38%;
+  /* padding-top: rem(22px); */
+
+  @include tablets {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    
+    &::before {
+      content: url("../../img/decor/hero-bars.png");
+    }
+  }
+}
+
+.hero__main-title {
+  font-size: rem(48px);
+  line-height: 1.21;
+  font-weight: bold;
+  margin-bottom: rem(21px);
+  text-transform: uppercase;
+}
+
+.hero__title-desk {
+  font-size: rem(21px);
+  line-height: 1.19;
+  margin-bottom: rem(32px);
+  /* padding-right: 4%; */
+
+  @include tablets {
+    padding: 0 26%;
+  }
+}
+
+.hero__icons-section {
+  @include tablets {
+    display: none;
+  }
+}
+
+
+
