@@ -32,7 +32,7 @@
 }
 
 .hero__container {
-  background/* -image */: url("./../img/decor/chocolates.png") right center / 50% auto no-repeat;
+  background: url("./../img/decor/chocolates.png") right -1% top 33%/54% auto no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -46,7 +46,6 @@
 
 .hero__title-section {
   width: 38%;
-  /* padding-top: rem(22px); */
 
   @include tablets {
     width: 100%;
@@ -58,7 +57,11 @@
     text-align: center;
     
     &::before {
-      content: url("../../img/decor/hero-bars.png");
+      content: "";
+      width: rem(344px);
+      height: rem(349px);
+      background: url("../../img/decor/hero-bars.png") center center / contain no-repeat;
+      margin-bottom: rem(16px);
     }
   }
 }
@@ -79,6 +82,10 @@
 
   @include tablets {
     padding: 0 26%;
+  }
+
+  @include phones {
+    padding: 0 13%;
   }
 }
 

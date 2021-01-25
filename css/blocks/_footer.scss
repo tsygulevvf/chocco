@@ -1,0 +1,29 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  height: rem(93px);
+  padding-top: rem(19px);
+
+  @include tablets {
+    height: rem(107px);
+  }
+
+  @include phones {
+    height: rem(151px);
+    padding-top: rem(22px);
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-end;
+
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
+}

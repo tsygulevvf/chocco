@@ -7,11 +7,23 @@
   align-items: center;
 }
 
+.phone-number_theme_green {
+  line-height: 1;
+  font-size: rem(21px);
+  color: $green;
+}
+
 .phone-number__icon {
   flex-shrink: 0;
 }
 
-.phone-number__icon-elem {
+/* .phone-number__icon-elem {
+  width: rem(14px);
+  height: rem(14px);
+  margin-right: rem(6px);
+} */
+
+.phone-number__icon-symbol {
   width: rem(14px);
   height: rem(14px);
   margin-right: rem(6px);

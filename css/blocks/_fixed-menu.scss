@@ -1,8 +1,12 @@
 .fixed-menu {
   position: fixed;
-  top: 38%;
-  right: 3%;
+  top: 32%;
+  right: 3.5%;
   z-index: $z-fixed-menu;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .fixed-menu__item {

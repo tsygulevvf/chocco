@@ -11,4 +11,12 @@
 .headline__subtitle {
   line-height: 1.2;
   padding: 0 26%;
+
+  @include tablets {
+    padding: 0 20%;
+  }
+
+  @include phones {
+    padding: 0 3%;
+  }
 }

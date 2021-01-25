@@ -1,5 +1,16 @@
 .benefit {
   text-align: center;
+
+  @include phones {
+    display: flex;
+    text-align: left;
+  }
+}
+
+.benefit__image {
+  @include phones {
+    margin-right: rem(20px);
+  }
 }
 
 .benefit__image-wrapper {
@@ -12,9 +23,18 @@
   overflow: hidden;
 }
 
-.benefit__icon {
+/* .benefit__icon {
   width: rem(65px);
   height: rem(69px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.benefit__icon-symbol {
+  width: rem(68px);
+  height: rem(68px);
   position: absolute;
   top: 50%;
   left: 50%;

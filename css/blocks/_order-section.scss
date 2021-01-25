@@ -2,9 +2,9 @@
   background: /* #61C4D9 */url("./../img/bg/berries-bg.png");
   position: relative;
 
-  & .section__title {
+  /* & .section__title {
     margin-bottom: rem(59px);
-  }
+  } */
 
   &:before {
     position: absolute;
@@ -18,6 +18,20 @@
     bottom: rem(198px);
     right: 0%;
     content: url("./../img/decor/leaf-order.png");
+  }
+
+  &::before, &::after {
+    @include tablets {
+      display: none;
+    }
+  }
+}
+
+.order-section__title {
+  margin-bottom: rem(59px);
+
+  @include tablets {
+    margin-bottom: rem(33px);
   }
 }
 

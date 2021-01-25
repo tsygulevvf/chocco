@@ -5,6 +5,11 @@
   overflow: hidden;
   position: relative;
 
+  @include tablets {
+    padding: rem(62px) rem(16px) rem(24px);
+    margin-bottom: rem(33px);
+  }
+
   &::before {
     content: "";
     display: block;
@@ -21,11 +26,22 @@
 
 .reviews__display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .reviews__avatar {
   width: rem(253px);
   height: rem(264px);
+
+  @include tablets {
+    width: rem(134px);
+    height: rem(134px);
+  }
 }
 
 .reviews__avatar-img {
@@ -39,6 +55,12 @@
   margin-left: rem(40px);
   padding-top: rem(28px);
   padding-right: rem(120px);
+
+  @include tablets {
+    margin-left: 0;
+    padding-top: rem(37px);
+    padding-right: 0;
+  }
 }
 
 .reviews__title {
@@ -47,6 +69,10 @@
   line-height: 1.19;
   color: #292929;
   margin-bottom: rem(14px);
+
+  @include tablets {
+    margin-bottom: rem(20px);
+  }
 }
 
 .reviews__text {
