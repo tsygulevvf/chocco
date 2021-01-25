@@ -482,7 +482,7 @@ img {
     content: "";
     width: 19.1111111111rem;
     height: 19.3888888889rem;
-    background: url("../../img/decor/hero-bars.png") center center/contain no-repeat;
+    background: url("../img/decor/hero-bars.png") center center/contain no-repeat;
     margin-bottom: 0.8888888889rem;
   }
 }
