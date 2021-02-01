@@ -1,0 +1,24 @@
+.fullscreen-menu {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color:#333537;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  /* margin: 0; */
+}
+
+.fullscreen-menu__close {
+  position: absolute;
+  top: rem(10px);
+  right: rem(30px);
+}

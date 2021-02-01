@@ -545,8 +545,35 @@ img {
   .menu {
     display: none;
   }
+  .menu_vertical {
+    display: block;
+  }
 }
 
+.menu_vertical {
+  /*  font-size: 36px;
+   color: #fff;
+   text-align: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color:#333537; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 110;
+  margin: 0; */
+}
+.menu_vertical .menu__list {
+  flex-direction: column;
+}
+
+/* .menu_vertical .menu__list {
+  flex-direction: column;
+}
+ */
 .menu__list {
   display: flex;
   align-items: center;
@@ -1353,5 +1380,35 @@ img {
 .socials__item-symbol {
   height: 1.1111111111rem;
   width: 1.1111111111rem;
+}
+
+.fullscreen-menu {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #333537;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  /* margin: 0; */
+}
+
+.fullscreen-menu__close {
+  position: absolute;
+  top: 0.5555555556rem;
+  right: 1.6666666667rem;
+}
+
+.close__icon {
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
 }
 /*# sourceMappingURL=main.css.map */
