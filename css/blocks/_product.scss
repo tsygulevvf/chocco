@@ -8,7 +8,21 @@
 
 .product__col-left {
   width: 50%;
-  background: url("./../img/decor/products-bars.png") no-repeat;
+  background: url("./../img/decor/products-bars.png") top rem(20px) left rem(14px) no-repeat, url("./../img/decor/products-ellipse-color.png") top rem(100px) left rem(14px) no-repeat, url("./../img/decor/products-ellipse.png") top rem(100px) left rem(14px) no-repeat;
+
+  &:before {
+    position: absolute;
+    top: rem(20px);
+    left: -2%;
+    content: url("./../img/decor/products-leaf.png");
+  }
+
+  &:after {
+    position: absolute;
+    bottom: rem(-76px);
+    left: 31%;
+    content: url("./../img/decor/leaf-products.png");
+  }
 }
 
 .product__col-right {
@@ -19,6 +33,22 @@
   width: rem(91px);
   height: rem(91px);
   background-color: #86C3D7;
+  padding: rem(12px) rem(22px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product__ingredients-icon-symbol {
+  width: rem(46px);
+  height: rem(46px);
+}
+
+.product__ingredients-text {
+  font-size: rem(14px);
+  line-height: 1.2;
+  font-weight: bold;
 }
 
 .product__title {
@@ -32,9 +62,21 @@
  
 }
 
+.product__properties {
+  display: flex;
+}
+
+.product__properties-col-one {
+  width: rem(148px);
+}
+
 .product__properties-row-bot {
   color: #000000;
   font-weight: bold;
+}
+
+.product__values {
+  display: flex;
 }
 
 .product__values-price {
@@ -42,4 +84,5 @@
   font-weight: 300;
   font-size: rem(60px);
   line-height: 1;
+  width: rem(148px);
 }
