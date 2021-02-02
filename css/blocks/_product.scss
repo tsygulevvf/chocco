@@ -1,0 +1,45 @@
+.product {
+  line-height: 1.22;
+}
+
+.product__container {
+  display: flex;
+}
+
+.product__col-left {
+  width: 50%;
+  background: url("./../img/decor/products-bars.png") no-repeat;
+}
+
+.product__col-right {
+  width: 50%;
+}
+
+.product__ingredients {
+  width: rem(91px);
+  height: rem(91px);
+  background-color: #86C3D7;
+}
+
+.product__title {
+  font-size: rem(36px);
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product__text {
+ 
+}
+
+.product__properties-row-bot {
+  color: #000000;
+  font-weight: bold;
+}
+
+.product__values-price {
+  color: #151515;
+  font-weight: 300;
+  font-size: rem(60px);
+  line-height: 1;
+}
