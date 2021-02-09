@@ -1597,7 +1597,8 @@ img {
 .products-slider__list {
   display: flex;
   position: relative;
-  transition: left 0.3s, right 0.3s;
+  left: 0;
+  transition: left 0.5s;
 }
 
 .products-slider__item {

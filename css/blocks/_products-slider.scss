@@ -10,7 +10,8 @@
 .products-slider__list {
   display: flex;
   position: relative;
-  transition: left .3s, right .3s;
+  left: 0;
+  transition: left .5s;
 }
 
 .products-slider__item {
