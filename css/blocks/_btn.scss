@@ -8,6 +8,8 @@
   text-decoration: none;
   display: inline-block;
   border: none;
+  color: #fff;
+  transition: color .3s, background .3s;
 
   &_theme_white {
     background: #fff;
@@ -19,9 +21,8 @@
     }
   }
 
-  &_theme_green {
+  &_theme_dark-green {
     background: #2E4E3F;
-    color: #fff;
 
     &:hover {
       background: #fff;
@@ -35,6 +36,15 @@
     text-transform: none;
 
     &:hover {
+      color: #497870;
+    }
+  }
+
+  &_theme_green {
+    background: #497870;
+
+    &:hover {
+      background: #fff;
       color: #497870;
     }
   }

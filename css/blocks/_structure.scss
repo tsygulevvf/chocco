@@ -1,0 +1,38 @@
+.structure {
+  
+}
+
+.structure__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.structure__item {
+  display: flex;
+  align-items: center;
+  margin-bottom:  rem(29px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.structure__icon-wrap {
+  margin-right: rem(12px);
+
+  & svg {
+    width: rem(32px);
+    height: rem(25px);
+  }
+}
+
+.structure__name {
+  width: rem(127px);
+  text-align: left;
+}
+
+.structure__weight {
+  width: rem(53px);
+  text-align: right;
+}
