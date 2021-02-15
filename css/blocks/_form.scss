@@ -58,6 +58,13 @@
   border: none;
   border: rem(3px) solid transparent;
   border-radius: rem(4px);
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 1.43;
+
+  &.input-error {
+    border-color: lime;
+  }
 
   &_textarea {
     height: rem(152px);
