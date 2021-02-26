@@ -1,4 +1,5 @@
 .fixed-menu {
+  color: white;
   position: fixed;
   top: 32%;
   right: 3.5%;
@@ -9,18 +10,26 @@
   }
 }
 
+.fixed-menu_shadowed {
+  color: black;
+
+  & .fixed-menu__link::before {
+    background-color:  black;
+  }
+}
+
 .fixed-menu__item {
   margin-bottom: rem(3px);
 
   &_active {
     .fixed-menu__link {
-      border-color: #fff;
+      border-color: inherit;
     }
   }
 
   &:hover {
     .fixed-menu__link {
-      border-color: #fff;
+      border-color: inherit;
     }
   }
 }
@@ -32,6 +41,7 @@
   border-radius: 50%;
   display: block;
   position: relative;
+  columns: inherit;
 
   &::before {
     content: "";
@@ -39,7 +49,7 @@
     width: rem(8px);
     height: rem(8px);
     border-radius: 50%;
-    background: #fff;
+    background-color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;

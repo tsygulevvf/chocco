@@ -42,6 +42,14 @@
   max-width: rem(290px);
   position: relative;
 
+  &.active .team__title-elem {
+    /* color: red; */
+  }
+
+  & .team__title-icon {
+    /* transform: rotate(180deg); */
+  }
+
   &:last-child {
     margin-right: 0;
     margin-bottom: 0;

@@ -1,0 +1,18 @@
+.products-menu-section {
+  position: relative;
+  background: url("../img/bg/products-menu.png") center center / cover no-repeat ;
+  color: #FFFFFF;
+  /* background-color: #61C4D9; */
+}
+
+.products-menu-section__title {
+  color: inherit;
+  position: absolute;
+  left: 6%;
+  top: 21%;
+
+  @include tablets {
+    left: 5%;
+    top: 12%;
+  }
+}

@@ -6,14 +6,14 @@
   &::before {
     content: url("./../img/decor/leaf-left.png");
     position: absolute;
-    bottom: rem(-160px);
-    left: 0;
+    bottom: rem(-169px);
+    left: -1%;
   }
 
   &::after {
     content: url("./../img/decor/berry-left.png");
     position: absolute;
-    bottom: rem(64px);
+    bottom: rem(-97px);
     left: -1%;
   }
 }
