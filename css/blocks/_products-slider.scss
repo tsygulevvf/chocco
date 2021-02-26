@@ -2,16 +2,43 @@
   position: relative;
 }
 
+.products-slider__pointer {
+  background: url('../img/icons/arrow-scroll.svg') center center no-repeat;
+  background-size: contain;
+  display: block;
+  width: rem(16px);
+  height: rem(29px);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+
+  &_next {
+    right: 0;
+    transform: rotate(-180deg);
+  }
+
+  &_prev {
+    left: 0;
+  }
+}
+
 .products-slider__wrap {
   /* position: relative; */
   overflow: hidden;
+
+  .bx-wrapper {
+    box-shadow: none;
+    border: 0;
+    background: transparent;
+  }
 }
 
 .products-slider__list {
   display: flex;
   position: relative;
   left: 0;
-  transition: left .5s;
+  transition: left .8s;
 }
 
 .products-slider__item {

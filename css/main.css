@@ -439,7 +439,7 @@ button, select {
 .hero {
   background: url("./../img/decor/big-leaf.png") right bottom no-repeat;
   background-color: #61C4D9;
-  height: 100%;
+  height: 100vh;
   min-height: 36.1111111111rem;
   color: #FFF;
   position: relative;
@@ -740,7 +740,7 @@ button, select {
 }
 
 .section {
-  height: 100%;
+  height: 100vh;
   min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
@@ -1646,16 +1646,40 @@ button, select {
   position: relative;
 }
 
+.products-slider__pointer {
+  background: url("../img/icons/arrow-scroll.svg") center center no-repeat;
+  background-size: contain;
+  display: block;
+  width: 0.8888888889rem;
+  height: 1.6111111111rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+.products-slider__pointer_next {
+  right: 0;
+  transform: rotate(-180deg);
+}
+.products-slider__pointer_prev {
+  left: 0;
+}
+
 .products-slider__wrap {
   /* position: relative; */
   overflow: hidden;
+}
+.products-slider__wrap .bx-wrapper {
+  box-shadow: none;
+  border: 0;
+  background: transparent;
 }
 
 .products-slider__list {
   display: flex;
   position: relative;
   left: 0;
-  transition: left 0.5s;
+  transition: left 0.8s;
 }
 
 .products-slider__item {
