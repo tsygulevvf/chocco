@@ -26,11 +26,19 @@
 
 .product__pic {
   max-width: 98%;
+
+  @include phones-s {
+    max-width: 90%;
+  }
 }
 
 .product__col-right {
   flex: 1;
   padding-right: rem(25px);
+
+  @include phones-s {
+    padding-right: 0;
+  }
 }
 
 .product__ingredients {
@@ -89,6 +97,10 @@
     align-items: center;
     text-align: center;
   }
+
+  @include phones-s {
+    padding: 0;
+  }
 }
 
 .product__title {
@@ -104,6 +116,10 @@
     text-align: center;
   }
 
+  @include phones-s {
+    margin-bottom: 0;
+  }
+
   
  /*  line-height: 1.2;
   font-weight: bold;
@@ -117,6 +133,10 @@
   @include tablets {
     text-align: center;
   }
+
+  @include phones-s {
+    margin-bottom: rem(10px);
+  }
 }
 
 .product__properties {
@@ -126,6 +146,10 @@
 
   @include tablets {
     margin-bottom: rem(26px);
+  }
+
+  @include phones-s {
+    margin-bottom: rem(15px);
   }
 }
 

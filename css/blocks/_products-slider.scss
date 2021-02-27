@@ -26,19 +26,21 @@
 .products-slider__wrap {
   /* position: relative; */
   overflow: hidden;
-
-  .bx-wrapper {
-    box-shadow: none;
-    border: 0;
-    background: transparent;
-  }
+  transform: translate3d(0px, 0px, 0px);
+  // .bx-wrapper {
+  //   box-shadow: none;
+  //   border: 0;
+  //   background: transparent;
+  // }
 }
 
 .products-slider__list {
   display: flex;
-  position: relative;
-  left: 0;
-  transition: left .8s;
+  // position: relative;
+  // left: 0;
+  // transition: left .8s;
+  // transform: translateZ(0);
+  // backface-visibility: hidden;
 }
 
 .products-slider__item {
@@ -52,6 +54,7 @@
   position: absolute;
   top: 52%;
   z-index: 20;
+  outline: none;
 
   @include tablets {
     top: 34%;
