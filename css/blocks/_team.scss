@@ -46,8 +46,8 @@
     /* color: red; */
   }
 
-  & .team__title-icon {
-    /* transform: rotate(180deg); */
+  &.active .team__title-icon {
+    transform: rotate(180deg);
   }
 
   &:last-child {
@@ -58,6 +58,10 @@
   @include tablets {
     margin-bottom: rem(16px);
     margin-right: 0;
+  }
+
+  @include phones-s {
+    margin-bottom: 0;
   }
 }
 
@@ -78,7 +82,7 @@
 }
 
 .team__title-elem {
-  margin-right: rem(3px);
+  margin-right: rem(4px);
 }
 
 .team__title-icon {

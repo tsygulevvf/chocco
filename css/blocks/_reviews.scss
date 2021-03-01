@@ -10,6 +10,12 @@
     margin-bottom: rem(33px);
   }
 
+  @include phones-s {
+    padding: rem(30px) rem(5px) rem(10px);
+    margin-bottom: rem(33px);
+    background-position: top 0 right -22%;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -83,6 +89,10 @@
     padding-top: rem(37px);
     padding-right: 0;
   }
+
+  @include phones-s {
+    padding-top: rem(5px);
+  }
 }
 
 .reviews__title {
@@ -95,11 +105,19 @@
   @include tablets {
     margin-bottom: rem(20px);
   }
+
+  @include phones-s {
+    margin-bottom: rem(5px);
+  }
 }
 
 .reviews__text {
   line-height: 1.2;
   margin-bottom: rem(31px);
+
+  @include phones-s {
+    margin-bottom: rem(4px);
+  }
 }
 
 .reviews__author {

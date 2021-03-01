@@ -72,8 +72,11 @@
 
   @include phones-s {
     &::before {
-      height: 32%;
-      width: 78%;
+      // height: 32%;
+      // width: 78%;
+      height: 38%;
+      display: block;
+      width: 100%;
     }
   }
 }
@@ -84,6 +87,10 @@
   font-weight: bold;
   margin-bottom: rem(21px);
   text-transform: uppercase;
+
+  @include tablets {
+    margin-bottom: rem(10px);
+  }
 
   @include phones-s {
     font-size: rem(42px);
@@ -99,7 +106,8 @@
   /* padding-right: 4%; */
 
   @include tablets {
-    padding: 0 26%;
+    padding: 0 15%;
+    margin-bottom: rem(16px);
   }
 
   @include phones {

@@ -5,26 +5,41 @@
   bottom: 0;
   display: flex;
 }
-.products-menu-section:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 0.3;
-}
+
 .products-menu__item {
   display: flex;
+
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   width: 100%;
+  //   height: 100%;
+  //   background: url("../img/bg/slide-coconut.jpg");
+  // }
 }
 
 .products-menu__title {
   position: relative;
   width: rem(102px);
   display: flex;
-    align-items: flex-end;
-    justify-content: center;
+  align-items: flex-end;
+  justify-content: center;
+  text-decoration: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg/slide-coconut.jpg");
+  }
 
   @include phones {
     width: rem(90px);
+  }
+
+  @include phones-s {
+    width: rem(48px);
   }
 }
 
@@ -37,12 +52,21 @@
 
 .products-menu__text {
   font-weight: bold;
-  font-size: 48px;
+  font-size: rem(48px);
   line-height: 1.2;
   color: inherit;
   writing-mode: tb-rl;
   white-space: nowrap;
   transform: rotate(-180deg);
+  margin-bottom: rem(39px);
+
+  @include phones {
+    font-size: rem(40px);
+  }
+
+  @include phones-s {
+    font-size: rem(32px);
+  }
 }
 
 
@@ -62,7 +86,11 @@
   }
 
   @include phones {
-    padding: rem(38px) rem(35px);
+    padding: rem(30px) rem(35px);
+  }
+
+  @include phones-s {
+    padding: rem(15px) rem(15px);
   }
 }
 

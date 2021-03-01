@@ -1,0 +1,5 @@
+.team-section__title {
+  @include phones-s {
+    margin-bottom: rem(10px);
+  }
+}

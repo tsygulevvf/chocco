@@ -21,6 +21,11 @@
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
+
+  @include phones-s {
+    width: rem(80px);
+    height: rem(80px);
+  }
 }
 
 /* .benefit__icon {
@@ -39,10 +44,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @include phones-s {
+    width: rem(40px);
+    height: rem(40px);
+  }
 }
 
 .benefit__text {
   padding-top: rem(13px);
+
+  @include phones-s {
+    padding-top: rem(6px);
+  }
 }
 
 .benefit__title {
@@ -50,6 +64,10 @@
   line-height: 1.2;
   font-weight: bold;
   margin-bottom: rem(19px);
+
+  @include phones-s {
+    margin-bottom: rem(9px);
+  }
 }
 
 .benefit__desc {

@@ -16,6 +16,10 @@
     margin-bottom: rem(20px);
   }
 
+  @include phones-s {
+    margin-bottom: rem(10px);
+  }
+
   &::before {
     content: url("./../img/decor/separator.png");
     position: absolute;

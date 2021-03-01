@@ -8,14 +8,14 @@
 
   &:before {
     position: absolute;
-    bottom: rem(208px);
+    bottom: rem(48px);
     left: 4%;
     content: url("./../img/decor/blueberries.png");
   } 
 
   &:after {
     position: absolute;
-    bottom: rem(198px);
+    bottom: rem(38px);
     right: 0%;
     content: url("./../img/decor/leaf-order.png");
   }
@@ -32,6 +32,15 @@
 
   @include tablets {
     margin-bottom: rem(33px);
+  }
+
+  @include phones {
+    font-size: rem(40px);
+    line-height: 0.9;
+  }
+
+  @include phones-s {
+    margin-bottom: rem(5px);
   }
 }
 

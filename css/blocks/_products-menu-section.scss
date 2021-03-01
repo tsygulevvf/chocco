@@ -5,14 +5,26 @@
   /* background-color: #61C4D9; */
 }
 
+.products-menu-section:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+}
+
 .products-menu-section__title {
   color: inherit;
   position: absolute;
   left: 6%;
-  top: 21%;
+  top: 12%;
 
   @include tablets {
     left: 5%;
     top: 12%;
+  }
+
+  @include phones {
+    left: 3%;
   }
 }

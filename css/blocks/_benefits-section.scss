@@ -16,6 +16,10 @@
     bottom: -2rem;
     left: -1%;
 
+    @include tablets {
+      bottom: -16%;
+    }
+
     @include phones {
       display: none;
     }

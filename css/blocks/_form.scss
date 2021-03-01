@@ -40,6 +40,10 @@
     @include tablets {
       margin-bottom: rem(20px);
     }
+
+    @include phones {
+      margin-bottom: rem(10px);
+    }
   }
 }
 
@@ -100,6 +104,7 @@
 
   @include phones-s {
     justify-content: flex-start;
+    margin-bottom: rem(10px);
   }
 }
 
