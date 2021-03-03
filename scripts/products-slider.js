@@ -12,6 +12,7 @@
 //   });
 // });
 const swiper = new Swiper('.swiper-container', {
+  speed: 600,
   // Optional parameters
   //loop: true,
 

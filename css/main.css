@@ -681,11 +681,27 @@ button, select {
 }
 
 .hamburger {
+  color: white;
+  position: fixed;
+  top: 3%;
+  right: 4%;
+  cursor: pointer;
+  z-index: 120;
   width: 1.4444444444rem;
   height: 1.3333333333rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  transition: opacity 0.3s ease;
+}
+.hamburger.hamburger_active .hamburger__plank_middle {
+  transform: translateY(0px) translateX(0) rotate(45deg);
+}
+.hamburger.hamburger_active .hamburger__plank_top {
+  opacity: 0;
+}
+.hamburger.hamburger_active .hamburger__plank_bottom {
+  transform: translateY(-8px) translateX(0) rotate(-45deg);
 }
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -696,8 +712,19 @@ button, select {
 .hamburger__plank {
   display: block;
   background: #fff;
-  height: 0.2222222222rem;
+  height: 4px;
   border-radius: 0.5555555556rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s;
+}
+.hamburger__plank:nth-of-type(2) {
+  top: 8px;
+}
+.hamburger__plank:nth-of-type(3) {
+  top: 16px;
 }
 
 .features {
@@ -2640,5 +2667,33 @@ button, select {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.overlay {
+  position: fixed;
+  background: #313131;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s, height 0.4s;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.overlay_open {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-menu {
+  color: #FFFFFF;
+  font-size: 2rem;
+  line-height: 2;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,9 +1,28 @@
 .hamburger {
+  color: white;
+  position: fixed;
+  top: 3%;
+  right: 4%;
+  cursor: pointer;
+  z-index: 120;
   width: rem(26px);
   height: rem(24px);
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  transition: opacity 0.3s ease;
+
+  &.hamburger_active .hamburger__plank_middle {
+    transform: translateY(0px) translateX(0) rotate(45deg);
+  }
+
+  &.hamburger_active .hamburger__plank_top {
+    opacity: 0;
+  }
+
+  &.hamburger_active .hamburger__plank_bottom {
+    transform: translateY(-8px) translateX(0) rotate(-45deg);
+  }
 
   @include tablets {
     display: inline-flex;
@@ -13,6 +32,19 @@
 .hamburger__plank {
   display: block;
   background: #fff;
-  height: rem(4px);
+  height: 4px;
   border-radius: rem(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s;
+
+  &:nth-of-type(2) {
+    top: 8px;
+  }
+
+  &:nth-of-type(3) {
+    top: 16px;
+  }
 }
