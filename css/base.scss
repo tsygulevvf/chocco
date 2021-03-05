@@ -23,6 +23,10 @@ body {
   color: #666666;
 }
 
+body.locked {
+  overflow: hidden;
+}
+
 .wrapper {
   position: relative;
   width: 100%;

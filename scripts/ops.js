@@ -2,6 +2,8 @@ const sections = $('section');
 const display = $('.maincontent');
 const sideMenu = $('.fixed-menu');
 const menuItems = sideMenu.find('.fixed-menu__item');
+const hamburgerPlank = $('.hamburger__plank');
+console.log(hamburgerPlank);
 
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
@@ -25,11 +27,14 @@ const changeMenuThemeForSection = (sectionEq) => {
   const currentSection = sections.eq(sectionEq);
   const menuTheme = currentSection.attr('data-sidemenu-theme');
   const activeClass = 'fixed-menu_shadowed';
+  const hamburgerDark = 'hamburger__plank_dark';
 
   if (menuTheme === 'black') {
     sideMenu.addClass(activeClass);
+    hamburgerPlank.addClass(hamburgerDark);
   } else {
     sideMenu.removeClass(activeClass);
+    hamburgerPlank.removeClass(hamburgerDark);
   }
 };
 

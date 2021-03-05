@@ -12,6 +12,10 @@
   justify-content: space-between;
   transition: opacity 0.3s ease;
 
+  &.hamburger_active .hamburger__plank_dark {
+    background: #fff;
+  }
+
   &.hamburger_active .hamburger__plank_middle {
     transform: translateY(0px) translateX(0) rotate(45deg);
   }
@@ -39,6 +43,10 @@
   left: 0;
   width: 100%;
   transition: all 0.5s;
+
+  &_dark {
+    background: #365A49;
+  }
 
   &:nth-of-type(2) {
     top: 8px;

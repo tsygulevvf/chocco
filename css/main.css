@@ -366,6 +366,10 @@ body {
   color: #666666;
 }
 
+body.locked {
+  overflow: hidden;
+}
+
 .wrapper {
   position: relative;
   width: 100%;
@@ -694,6 +698,9 @@ button, select {
   justify-content: space-between;
   transition: opacity 0.3s ease;
 }
+.hamburger.hamburger_active .hamburger__plank_dark {
+  background: #fff;
+}
 .hamburger.hamburger_active .hamburger__plank_middle {
   transform: translateY(0px) translateX(0) rotate(45deg);
 }
@@ -719,6 +726,9 @@ button, select {
   left: 0;
   width: 100%;
   transition: all 0.5s;
+}
+.hamburger__plank_dark {
+  background: #365A49;
 }
 .hamburger__plank:nth-of-type(2) {
   top: 8px;
@@ -2695,5 +2705,13 @@ button, select {
   color: #FFFFFF;
   font-size: 2rem;
   line-height: 2;
+}
+
+.overlay-menu__item {
+  opacity: 0;
+}
+.overlay-menu__item.slideInUp {
+  opacity: 1;
+  transition: opacity 0.9s;
 }
 /*# sourceMappingURL=main.css.map */

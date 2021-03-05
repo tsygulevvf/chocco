@@ -28,5 +28,11 @@
 }
 
 .overlay-menu__item {
+  opacity: 0;
+
+  &.slideInUp {
+    opacity: 1;
+    transition: opacity .9s;
+  }
   // margin-bottom: rem(1px);
 }
